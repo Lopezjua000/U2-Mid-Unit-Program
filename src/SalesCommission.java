@@ -18,10 +18,33 @@ Total Earnings: $1184.38
 
  */
 
+/*
+
+ */
+
+import jdk.nashorn.internal.scripts.JO;
+
+import javax.swing.*;
+
 public class SalesCommission {
 
     public static void main(String[] args) {
 
+    double hourlyRate =  getInput("What is the hourly pay?");
+    double hoursWorked =  getInput("How many hours did you work?");
+    double salesCommission = getInput("What is the sales commission?");
+
     }
+
+
+ }
+
+
+    public static double getInput(String prompt) {
+
+    return Double.parseDouble(JOptionPane.showInputDialog(prompt));
+
+    }
+
 
 }
